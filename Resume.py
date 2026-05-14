@@ -1,12 +1,9 @@
 import streamlit as st
 from groq import Groq
 import os
-from dotenv import load_dotenv
 import io
 import re
-
-load_dotenv()
-
+client = Groq(api_key="YOUR_KEY")
 # Page configuration
 st.set_page_config(
     page_title="Resume Builder Assistant",
